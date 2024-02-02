@@ -7,7 +7,7 @@ export const showApi = createApi({
         baseUrl: `https://api.tvmaze.com`
     }),
     endpoints: (builder) => ({
-        fetchAllShows: builder.query<Apires, void>({
+        fetchAllShows: builder.query<Apires[], void>({
             query: () => ({
                 url: `/search/shows`,
                 params: {
