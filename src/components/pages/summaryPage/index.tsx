@@ -66,6 +66,7 @@ const SummaryPage = () => {
                 >Book Now</Button>
             </Stack>
             {
+                showName &&
                 formVisible && <Form
                     onClose={() => {
                         setFormVisible(false)
